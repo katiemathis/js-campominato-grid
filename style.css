@@ -2,21 +2,36 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #fff;
+    min-height: 50px;
+}
+
+img {
+    float: left;
+    margin: 0 20px 10px 50px;
+    padding: 10 0;
 }
 
 body {
-    background-color: #011627;
+    background-color: #71ffcb;
 }
 
 
 .container {
     width: 500px;
     margin: 50px auto;
-    border: solid 1px #fff;
+    border: solid 1px #000;
+
+
 }
 
 #grid {
     height: 500px;
+
 }
 
 #grid::after {
@@ -26,7 +41,7 @@ body {
 }
 
 .square {
-    border: solid 1px #fff;
+    border: solid 1px #000;
     width: calc(100% / 8);
     height: calc(100% / 8);
     float: left;
@@ -35,3 +50,14 @@ body {
 .clicked {
     background-color: aquamarine;
 } 
+
+
+footer {
+    background-color: #fff;
+    min-height: 50px;
+}
+
+p {
+    margin-left: 50px;
+    padding-top: 10px;
+}
