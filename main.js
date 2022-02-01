@@ -1,4 +1,8 @@
-const gridElement = document.getElementById('grid');
+
+
+
+
+const gridElement = document.getElementById('easy-grid');
 
 const createGridElement = () => {
     const node = document.createElement('div');
@@ -6,25 +10,31 @@ const createGridElement = () => {
     return node;
 }
 
+let number = document.getElementsByClassName('square').innerHTML
 
-for (let i = 1; i<=64; i++) {
+
+
+
+
+for (let i = 1; i<=100; i++) {
 
     const node = createGridElement();
 
-    //gridElement.innerHTML += `<div class="square"></div>`;
-
+    number += '<p>'+ i +'</p>';
+    
+    
+   
     node.addEventListener('click', function() {
         console.log(this);
         this.classList.add('clicked');
-    });
 
-    /*
-    node.addEventListener('click', () => {
-        console.log(this);
-        node.classList.add('clicked');
-    })
-    */
+    });
 
     gridElement.appendChild(node);
 
 }
+
+
+
+
+
