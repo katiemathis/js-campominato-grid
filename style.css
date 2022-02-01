@@ -45,6 +45,15 @@ body {
 .container {
     width: 500px;
     margin: 50px auto;
+
+}
+
+span {
+    font-weight: 600;
+    font-size: larger;
+    line-height: 500px;
+    margin: auto;
+ 
 }
 
 #grid {
@@ -60,8 +69,6 @@ body {
 
 .square {
     border: solid 1px #000;
-    /*width: calc(100% / 10);
-    height: calc(100% / 10);*/
     float: left;
     color: black;
     font-size: 20px;
