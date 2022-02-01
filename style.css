@@ -8,32 +8,31 @@
 header {
     background-color: #fff;
     min-height: 50px;
-    display: flex;
-    justify-content: space-between;
 
 }
 
 #logo {
     margin: 0 0px 10px 50px;
+    float: left;
 
 }
 
 img {
     float: left;
     margin-bottom: 10px;
+    height: 50%;
+    vertical-align: middle;
 }
 
 #dropdown {
-    display: flex;
-    align-self: center;
+    float: right;
 
 }
 
 #difficulty {
     max-height: 20px;
     width: 100px;
-    margin-right: 100px;
-    align-self: center;
+
 }
 
 body {

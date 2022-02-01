@@ -14,6 +14,8 @@ function play() {
 
     const difficoltà = document.getElementById('difficulty').value;
     
+
+    
     let numeroCelle;
     let cellePerRiga;
 
@@ -30,6 +32,8 @@ function play() {
     }
 
     cellePerRiga = Math.sqrt(numeroCelle);
+
+
 
     const gridElement = document.getElementById('grid');
 
@@ -55,8 +59,50 @@ function play() {
         });
     
         gridElement.appendChild(node);
+
     
     }
+
+    
+
+    /*function getRandomInt(numeroCelle) {
+        return Math.floor(Math.random() * (numeroCelle) + 1);
+        console.log('this is where the bombs are:' (getRandomInt(numeroCelle)));
+        console.log('this is the numeroCelle:' + numeroCelle)
+
+    }*/
+
+    const NUMERO_BOMBE = 16;
+    generaBombe(NUMERO_BOMBE, numeroCelle);
+    let getRandomInt = parseInt(Math.floor(Math.random() * (max - min + 1) + min));
+
+    function generaBombe(min, max) {
+        return getRandomInt;
+        
+    }
+
+    function generaBombe() {
+        const bombeGenerate = [];
+
+
+        while (bombeGenerate.length < NUMERO_BOMBE) {
+            bombeGenerate.push(getRandomInt(1, numeroCelle));
+            console.log(bombeGenerate);
+
+            const bomba = getRandomInt(1, numeroCelle);
+            if (!bombeGenerate.includes(bomba)) {
+                bombeGenerate.push(bomba);
+            }
+            
+        }
+
+        return bombeGenerate
+    
+   
+
+
+    }
+
 
 
 }
