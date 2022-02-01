@@ -43,19 +43,16 @@ body {
 
 
 .container {
-    width: 1000px;
+    width: 500px;
     margin: 50px auto;
-    border: solid 1px #000;
+}
 
+#grid {
+    height: 500px;
 
 }
 
-#easy-grid {
-    height: 1000px;
-
-}
-
-#easy-grid::after {
+#grid::after {
     display: block;
     content: "";
     clear: both;
@@ -63,11 +60,14 @@ body {
 
 .square {
     border: solid 1px #000;
-    width: calc(100% / 10);
-    height: calc(100% / 10);
+    /*width: calc(100% / 10);
+    height: calc(100% / 10);*/
     float: left;
     color: black;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clicked {
