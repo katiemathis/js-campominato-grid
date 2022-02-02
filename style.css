@@ -74,11 +74,16 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .clicked {
     background-color: #547ee9;
 } 
+
+.clicked-bomb {
+    background-color: red;
+}
 
 
 footer {
